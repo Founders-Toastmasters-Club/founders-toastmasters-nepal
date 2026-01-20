@@ -57,6 +57,31 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Toastmasters Brand Colors
+        maroon: {
+          DEFAULT: "hsl(var(--maroon))",
+          dark: "hsl(var(--maroon-dark))",
+          light: "hsl(var(--maroon-light))",
+        },
+        "loyal-blue": {
+          DEFAULT: "hsl(var(--loyal-blue))",
+          dark: "hsl(var(--loyal-blue-dark))",
+          light: "hsl(var(--loyal-blue-light))",
+        },
+        "cool-grey": {
+          DEFAULT: "hsl(var(--cool-grey))",
+          dark: "hsl(var(--cool-grey-dark))",
+          light: "hsl(var(--cool-grey-light))",
+        },
+        "happy-yellow": {
+          DEFAULT: "hsl(var(--happy-yellow))",
+          dark: "hsl(var(--happy-yellow-dark))",
+          light: "hsl(var(--happy-yellow-light))",
+        },
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        display: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +90,37 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        "slide-up": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in-right": {
+          from: { opacity: "0", transform: "translateX(20px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
+        "slide-up": "slide-up 0.6s ease-out",
+        "slide-in-right": "slide-in-right 0.5s ease-out",
+        shimmer: "shimmer 2s infinite linear",
       },
     },
   },

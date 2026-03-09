@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Target, Heart, Users, Award } from "lucide-react";
-import groupMeetingImage from "@/assets/group-meeting.jpg";
+// import groupMeetingImage from "@/assets/group-meeting.jpg";
+import groupMeetingImage from "@/assets/team-meeting-group.png";
+
 
 const values = [
   {

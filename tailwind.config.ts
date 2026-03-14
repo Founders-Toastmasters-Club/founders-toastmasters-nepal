@@ -68,6 +68,11 @@ export default {
           dark: "hsl(var(--loyal-blue-dark))",
           light: "hsl(var(--loyal-blue-light))",
         },
+        "blissful-blue": {
+          DEFAULT: "hsl(var(--blissful-blue))",
+          dark: "hsl(var(--blissful-blue-dark))",
+          light: "hsl(var(--blissful-blue-light))",
+        },
         "cool-grey": {
           DEFAULT: "hsl(var(--cool-grey))",
           dark: "hsl(var(--cool-grey-dark))",
@@ -80,8 +85,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        sans: ['system-ui', 'sans-serif'],
         display: ['Montserrat', 'system-ui', 'sans-serif'],
+        body: ['system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

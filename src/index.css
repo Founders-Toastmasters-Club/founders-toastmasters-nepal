@@ -8,81 +8,106 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Founders Toastmasters Club Nepal - Design System
-   Brand Colors: Toastmasters Maroon, Loyal Blue, Cool Grey, Happy Yellow
-   Typography: Montserrat (bold, professional)
+/* Founders Toastmasters Club Nepal - Toastmasters Brand Compliant Design System
+   Brand Colors: 
+   - Loyal Blue #004165 (Primary)
+   - True Maroon #772432 (Primary)
+   - Cool Gray #A9B2B1 (Primary)
+   - Happy Yellow #F2DF74 (Accent)
+   
+   Typography:
+   - Headlines/Display: Montserrat (free alternate for Gotham)
+   - Body Copy: Source Sans 3 (free alternate for Myriad Pro)
+   
+   Website Guidelines Compliance:
+   ✓ Disclaimer added to footer
+   ✓ Official Toastmasters brand colors implemented
+   ✓ Official typography guidelines followed
+   ✓ No copyrighted Toastmasters materials rehosted
 */
 
 @layer base {
   :root {
-    /* Modern Professional Color Palette */
+    /* Toastmasters Brand Color Palette - Official */
+    /* True Maroon: #772432 (RGB 119, 36, 50) */
     --maroon: 348 55% 30%;
     --maroon-dark: 348 60% 22%;
     --maroon-light: 348 45% 45%;
     
+    /* Loyal Blue: #004165 (RGB 0, 65, 101) - PRIMARY */
     --loyal-blue: 200 100% 20%;
     --loyal-blue-dark: 200 100% 15%;
     --loyal-blue-light: 200 80% 35%;
     
+    /* Blissful Blue: #006094 (RGB 0, 96, 148) - Loyal Blue Variant */
+    --blissful-blue: 200 100% 29%;
+    --blissful-blue-dark: 200 100% 25%;
+    --blissful-blue-light: 200 100% 40%;
+    
+    /* Cool Gray: #A9B2B1 (RGB 169, 178, 177) */
     --cool-grey: 168 8% 67%;
     --cool-grey-light: 168 8% 85%;
     --cool-grey-dark: 168 10% 40%;
     
+    /* Happy Yellow: #F2DF74 (RGB 242, 223, 116) - ACCENT */
     --happy-yellow: 50 86% 70%;
     --happy-yellow-dark: 50 90% 55%;
     --happy-yellow-light: 50 80% 85%;
 
-    /* Semantic Tokens - Light Theme */
+    /* Semantic Tokens - Light Theme using Toastmasters Colors */
     --background: 0 0% 98%;
-    --foreground: 222 84% 5%;
+    --foreground: 200 100% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
+    --card-foreground: 200 100% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 5%;
+    --popover-foreground: 200 100% 15%;
 
-    --primary: 222 84% 20%;
+    /* Primary: Loyal Blue */
+    --primary: 200 100% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 84% 5%;
+    /* Secondary: Cool Gray */
+    --secondary: 168 8% 85%;
+    --secondary-foreground: 200 100% 15%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 168 8% 85%;
+    --muted-foreground: 200 100% 30%;
 
-    --accent: 45 93% 58%;
-    --accent-foreground: 222 84% 5%;
+    /* Accent: Happy Yellow */
+    --accent: 50 86% 70%;
+    --accent-foreground: 200 100% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 20%;
+    --border: 200 30% 90%;
+    --input: 200 30% 90%;
+    --ring: 200 100% 20%;
 
     --radius: 0.75rem;
 
-    /* Custom Design Tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 20%) 0%, hsl(222 84% 15%) 100%);
-    --gradient-hero-overlay: linear-gradient(180deg, hsla(222, 84%, 20%, 0.9) 0%, hsla(222, 84%, 15%, 0.95) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(45 93% 50%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(210 40% 96%) 100%);
+    /* Custom Design Tokens - Toastmasters Brand */
+    --gradient-hero: linear-gradient(135deg, hsl(200 100% 20%) 0%, hsl(200 100% 15%) 100%);
+    --gradient-hero-overlay: linear-gradient(180deg, hsla(200, 100%, 20%, 0.9) 0%, hsla(200, 100%, 15%, 0.95) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(50 86% 70%) 0%, hsl(50 86% 60%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(200 15% 96%) 100%);
     
-    --shadow-soft: 0 4px 20px -4px hsla(222, 84%, 20%, 0.08);
-    --shadow-card: 0 8px 30px -8px hsla(222, 84%, 20%, 0.12);
-    --shadow-elevated: 0 20px 50px -15px hsla(222, 84%, 20%, 0.15);
-    --shadow-glow: 0 0 40px -10px hsla(45, 93%, 58%, 0.4);
+    --shadow-soft: 0 4px 20px -4px hsla(200, 100%, 20%, 0.08);
+    --shadow-card: 0 8px 30px -8px hsla(200, 100%, 20%, 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsla(200, 100%, 20%, 0.15);
+    --shadow-glow: 0 0 40px -10px hsla(50, 86%, 70%, 0.4);
 
-    /* Sidebar tokens */
+    /* Sidebar tokens - Toastmasters branded */
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 222 84% 5%;
-    --sidebar-primary: 222 84% 20%;
+    --sidebar-foreground: 200 100% 15%;
+    --sidebar-primary: 200 100% 20%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 84% 5%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 222 84% 20%;
+    --sidebar-accent: 168 8% 85%;
+    --sidebar-accent-foreground: 200 100% 15%;
+    --sidebar-border: 200 30% 90%;
+    --sidebar-ring: 200 100% 20%;
   }
 
   .dark {

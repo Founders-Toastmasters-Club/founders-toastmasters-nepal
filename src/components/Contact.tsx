@@ -18,28 +18,28 @@ const contactInfo = [
     label: "Location",
     value: "Rooster Logic Pvt. Ltd.",
     subvalue: "Gairidhara, Naxal, Kathmandu",
-    color: "bg-red-50 text-red-600",
+    color: "bg-loyal-blue/10 text-loyal-blue",
   },
   {
     icon: Calendar,
     label: "Meeting Day",
     value: "Every Wednesday",
     subvalue: "Consistent weekly schedule",
-    color: "bg-blue-50 text-blue-600",
+    color: "bg-happy-yellow/20 text-maroon",
   },
   {
     icon: Clock,
     label: "Time",
     value: "6:00 PM - 7:40 PM",
     subvalue: "90 minutes of inspiration",
-    color: "bg-green-50 text-green-600",
+    color: "bg-cool-grey/10 text-cool-grey-dark",
   },
   {
     icon: Mail,
     label: "Email",
     value: "founderstoastmastersclub@gmail.com",
     subvalue: "Drop us a message anytime",
-    color: "bg-purple-50 text-purple-600",
+    color: "bg-maroon/10 text-maroon",
   },
 ];
 
@@ -63,7 +63,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 md:py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white"
+      className="w-full py-20 md:py-24 lg:py-28 bg-gradient-to-b from-white to-cool-grey/5"
     >
       <div className="container-wide px-4 md:px-6 lg:px-8">
         {/* Header */}
@@ -91,14 +91,13 @@ export const Contact = () => {
         </motion.div>
 
         {/* Mobile-first layout: Stack on mobile, side-by-side on larger screens */}
-        <div className="space-y-8 lg:space-y-0">
-          {/* CTA Section - Prominent on mobile, sticky on desktop */}
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-6">
+          {/* CTA Section - Prominent on mobile */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:sticky lg:top-24 lg:max-w-sm xl:max-w-md"
           >
             {/* Guest Experience Card */}
             <div className="bg-gradient-to-br from-accent/5 to-accent/10 rounded-2xl md:rounded-3xl p-4 md:p-6 lg:p-8 border border-accent/20 shadow-card mb-6">
@@ -172,7 +171,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:ml-8 xl:ml-12"
+            className=""
           >
             <div className="mb-6 md:mb-8">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-3 md:mb-4 lg:mb-6">
@@ -186,7 +185,7 @@ export const Contact = () => {
               </p>
             </div>
 
-            <div className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <div className="grid gap-3 md:gap-4 lg:grid-cols-1">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={info.label}

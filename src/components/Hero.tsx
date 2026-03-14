@@ -15,7 +15,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100"
+      className="relative w-full min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-white/70 to-loyal-blue"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -27,7 +27,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 container-wide pt-20">
+      <div className="relative z-10 container-wide pt-20 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -41,7 +41,7 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium text-sm border border-accent/20"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm text-loyal-blue font-medium text-sm border border-white/40 shadow-lg"
               >
                 <MapPin size={16} />
                 Kathmandu, Nepal • District 41

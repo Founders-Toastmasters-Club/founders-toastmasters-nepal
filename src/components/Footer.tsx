@@ -29,7 +29,7 @@ export const Footer = () => {
       label: "Location",
       value: "Rooster Logic Pvt. Ltd.",
       subvalue: "Gairidhara, Naxal, Kathmandu",
-      color: "bg-red-50 text-red-600",
+      color: "bg-loyal-blue/10 text-loyal-blue",
       link: "https://maps.app.goo.gl/iZQYvNpjPX4ZdtAf6",
     },
     {
@@ -37,7 +37,7 @@ export const Footer = () => {
       label: "Email",
       value: "founderstoastmastersclub@gmail.com",
       subvalue: "Drop us a message",
-      color: "bg-blue-50 text-blue-600",
+      color: "bg-happy-yellow/20 text-maroon",
       link: "mailto:founderstoastmastersclub@gmail.com",
     },
     {
@@ -45,7 +45,7 @@ export const Footer = () => {
       label: "Founders Toastmasters Club",
       value: "District 41, Division C, Area 1 ",
       subvalue: "Club No. 07246483",
-      color: "bg-green-50 text-green-600",
+      color: "bg-maroon/10 text-maroon",
       link: "https://www.toastmasters.org/find-a-club/07246483",
     },
   ];
@@ -67,7 +67,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-50 to-white border-t border-gray-200">
+    <footer className="bg-gradient-to-b from-cool-grey/10 to-white border-t border-cool-grey/20">
       <div className="container-wide py-8">
         {/* Main Footer Content */}
         <div className="grid lg:grid-cols-3 gap-12 mb-12">

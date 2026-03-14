@@ -53,7 +53,7 @@ export const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="py-24 bg-gradient-to-b from-white to-gray-50"
+      className="w-full py-20 md:py-24 lg:py-28 bg-gradient-to-b from-cool-grey/5 to-white"
     >
       <div className="container-wide">
         {/* Header */}

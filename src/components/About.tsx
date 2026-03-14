@@ -16,26 +16,26 @@ const values = [
     title: "Master Public Speaking",
     description:
       "Overcome fear and deliver compelling presentations with confidence.",
-    color: "bg-blue-50 text-blue-600",
+    color: "bg-loyal-blue/10 text-loyal-blue",
   },
   {
     icon: Users,
     title: "Build Leadership Skills",
     description:
       "Develop the ability to inspire, motivate, and guide teams effectively.",
-    color: "bg-green-50 text-green-600",
+    color: "bg-maroon/10 text-maroon",
   },
   {
     icon: Heart,
     title: "Foster Lasting Connections",
     description: "Join a supportive community of like-minded professionals.",
-    color: "bg-pink-50 text-pink-600",
+    color: "bg-happy-yellow/20 text-maroon",
   },
   {
     icon: Award,
     title: "Achieve Personal Growth",
     description: "Track your progress and celebrate milestones along the way.",
-    color: "bg-purple-50 text-purple-600",
+    color: "bg-cool-grey/10 text-cool-grey-dark",
   },
 ];
 
@@ -64,7 +64,7 @@ const journey = [
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="w-full py-20 md:py-24 lg:py-28 bg-gradient-to-b from-loyal-blue/5 to-white">
       <div className="container-wide">
         {/* Header */}
         <motion.div

@@ -19,35 +19,35 @@ const meetingFlow = [
     title: "Welcome & Business",
     description: "Meeting opens with announcements and role assignments",
     icon: Users,
-    color: "bg-blue-50 text-blue-600",
+    color: "bg-loyal-blue/10 text-loyal-blue",
   },
   {
     time: "6:25 PM",
     title: "Prepared Speeches",
     description: "Members deliver planned speeches from Pathways curriculum",
     icon: Mic,
-    color: "bg-green-50 text-green-600",
+    color: "bg-maroon/10 text-maroon",
   },
   {
     time: "6:45 PM",
     title: "Table Topics",
     description: "Impromptu speaking - respond to surprise questions",
     icon: Zap,
-    color: "bg-yellow-50 text-yellow-600",
+    color: "bg-happy-yellow/20 text-maroon",
   },
   {
     time: "7:00 PM",
     title: "Evaluations",
     description: "Constructive feedback to help speakers improve",
     icon: ThumbsUp,
-    color: "bg-purple-50 text-purple-600",
+    color: "bg-cool-grey/10 text-cool-grey-dark",
   },
   {
     time: "7:20 PM",
     title: "Awards & Close",
     description: "Recognition and meeting wrap-up",
     icon: Award,
-    color: "bg-pink-50 text-pink-600",
+    color: "bg-loyal-blue/10 text-loyal-blue",
   },
 ];
 
@@ -78,7 +78,7 @@ export const Meetings = () => {
   return (
     <section
       id="meetings"
-      className="py-24 bg-gradient-to-b from-gray-50 to-white"
+      className="w-full py-20 md:py-24 lg:py-28 bg-gradient-to-b from-white via-loyal-blue/5 to-cool-grey/5"
     >
       <div className="container-wide">
         {/* Header */}
@@ -177,7 +177,7 @@ export const Meetings = () => {
                   alt="Table Topics session"
                   className="w-full h-48 object-cover rounded-2xl shadow-card"
                 />
-                <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-2xl">
+                <div className="bg-gradient-to-r from-happy-yellow to-happy-yellow/80 text-maroon p-4 rounded-2xl">
                   <Zap size={24} className="mb-2" />
                   <p className="font-bold text-lg">Table Topics</p>
                   <p className="text-sm opacity-90">Think on your feet!</p>
@@ -188,7 +188,7 @@ export const Meetings = () => {
                 transition={{ duration: 0.3 }}
                 className="space-y-4 pt-12"
               >
-                <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-2xl">
+                <div className="bg-gradient-to-r from-loyal-blue to-loyal-blue/80 text-white p-4 rounded-2xl">
                   <Mic size={24} className="mb-2" />
                   <p className="font-bold text-lg">Prepared Speeches</p>
                   <p className="text-sm opacity-90">Showcase your skills</p>

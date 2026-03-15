@@ -225,9 +225,9 @@ export const Hero = () => {
                 <MapPin className="text-accent" size={24} />
               </div>
               <div className="text-left">
-                <p className="font-semibold text-foreground">Carnival Restro</p>
+                <p className="font-semibold text-foreground">Rooster Logic Pvt. Ltd.</p>
                 <p className="text-muted-foreground text-sm">
-                  Anamnagar, Kathmandu
+                  Gairidhara, Kathmandu
                 </p>
               </div>
             </div>
